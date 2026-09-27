@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "SafeBite",
+    "slug": "safebite",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.safebite.app",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.safebite.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "scheme": "safebite",
+    "description": "Find places nearby that can feed you, whatever you cannot eat.",
+    "primaryColor": "#1F7A4D",
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "SafeBite uses your location to show which nearby places can cater for your dietary requirements.",
+          "isIosBackgroundLocationEnabled": false,
+          "isAndroidBackgroundLocationEnabled": false
+        }
+      ]
+    ]
+  }
+}
